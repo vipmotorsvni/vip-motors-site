@@ -1,0 +1,88 @@
+/* ================= style.css ================= */
+.sobre{
+padding:100px 20px;
+background:#050505;
+}
+
+.sobre-container{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.sobre h2{
+font-family:Orbitron;
+margin-bottom:20px;
+}
+
+
+.localizacao{
+padding:100px 20px;
+text-align:center;
+}
+
+.endereco{
+margin:20px 0;
+font-size:18px;
+}
+
+.mapa{
+max-width:900px;
+margin:auto;
+margin-top:20px;
+border:2px solid #00ff66;
+}
+
+
+.contato{
+padding:100px 20px;
+text-align:center;
+background:#050505;
+}
+
+.contato-grid{
+display:flex;
+flex-direction:column;
+gap:20px;
+max-width:300px;
+margin:auto;
+}
+
+.contato-btn{
+padding:16px;
+background:#00ff66;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+border-radius:10px;
+transition:0.3s;
+}
+
+.contato-btn:hover{
+transform:scale(1.05);
+}
+
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #00ff66;
+}
+
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#00ff66;
+color:#000;
+font-size:26px;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+cursor:pointer;
+box-shadow:0 0 15px #00ff66;
+}
