@@ -24,31 +24,44 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 80px;
 }
 
-/* HERO */
+/* HERO FULL SCREEN */
 .hero {
-  height: 100vh;
   position: relative;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
+/* SLIDES */
 .slide {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
+
+  background-size: cover;       /* 🔥 AJUSTA À TELA */
+  background-position: center;  /* 🔥 CENTRALIZA */
+  background-repeat: no-repeat;
+
   opacity: 0;
-  transform: scale(1.2);
-  transition: 1.5s;
+  transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
   opacity: 1;
-  transform: scale(1);
 }
+
+/* TEXTO CENTRAL */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
 
 /* TEXTO HERO */
 .hero-text {
