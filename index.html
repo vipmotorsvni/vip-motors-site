@@ -1,98 +1,110 @@
-<!-- ================= index.html ================= -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vip Motors | Oficina • Peças • Acessórios</title>
+  <meta charset="UTF-8">
+  <title>Vip Motors</title>
 
-<link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vip Motors - Oficina premium para motos">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./index.html">
-<link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
+<!-- HEADER -->
+<header id="header">
 
-<div class="container nav">
+  <!-- 🔥 MENU -->
+  <nav class="menu">
+    <a href="#">Peças</a>
+    <a href="#">Acessórios</a>
+    <a href="#">Capacetes</a>
+  </nav>
 
-<div class="logo-area">
-<img src="assets/logo.png" class="logo">
-</div>
+  <!-- 🔥 LOGO -->
+  <img src="Vip logo png.png" class="logo">
 
-<nav>
-<a href="#inicio">Início</a>
-<a href="#servicos">Serviços</a>
-<a href="#sobre">Sobre</a>
-<a href="#localizacao">Localização</a>
-<a href="#contato">Contato</a>
-</nav>
+  <nav class="menu">
+    <a onclick="abrirPagina('pecas')">Peças</a>
+    <a onclick="abrirPagina('acessorios')">Acessórios</a>
+    <a onclick="abrirPagina('capacetes')">Capacetes</a>
+  </nav>
 
-</div>
+  <img src="Vip logo png.png" class="logo">
 
 </header>
 
+<!-- HERO PARALLAX -->
+<section class="hero">
 
-<!-- HERO -->
-
-<section id="inicio" class="hero">
-
-<div class="hero-bg"></div>
-
-<div class="hero-content">
-
-<img src="assets/logo.png" class="hero-logo">
-
-<h1>Oficina • Peças • Acessórios</h1>
-
-<p>Especialistas em manutenção e equipamentos para motocicletas</p>
-
-<div class="hero-buttons">
-<a href="https://wa.me/5528999868820" class="btn-primary">WhatsApp</a>
-<a href="#servicos" class="btn-secondary">Nossos Serviços</a>
-</div>
-
-</div>
+  <div class="slide active" style="background-image: url('Fora\ Loja.jpg')"></div>
+  <div class="slide" style="background-image: url('ZX6\ Loja.jpg')"></div>
+  <div class="slide" style="background-image: url('Dentro\ Loja.jpg')"></div>
+ 
+  <div class="hero-text">
+    <h1>VIP MOTORS</h1>
+    <p>Performance • Qualidade • Confiança</p>
+  </div>
 
 </section>
+main id="paginas">
 
+  <!-- PEÇAS -->
+  <section id="pecas" class="pagina ativa">
+    <h2>Peças</h2>
+    <div class="grid">
+      <div class="card">Freios</div>
+      <div class="card">Correntes</div>
+      <div class="card">Filtros</div>
+    </div>
+  </section>
+
+  <!-- ACESSÓRIOS -->
+  <section id="acessorios" class="pagina">
+    <h2>Acessórios</h2>
+    <div class="grid">
+      <div class="card">Luvas</div>
+      <div class="card">Suporte Celular</div>
+      <div class="card">Baú</div>
+    </div>
+  </section>
+
+  <!-- CAPACETES -->
+  <section id="capacetes" class="pagina">
+    <h2>Capacetes</h2>
+    <div class="grid">
+      <div class="card">Capacete Esportivo</div>
+      <div class="card">Capacete Urbano</div>
+      <div class="card">Capacete Off-road</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- DESTAQUE -->
+<section class="section reveal">
+  <h2>Excelência em Motos</h2>
+  <p>Peças, serviços e performance de alto nível</p>
+</section>
+
+<!-- MOTO CENTRAL -->
+<section class="moto-section reveal">
+  <img src="zx6.png" class="moto">
+</section>
 
 <!-- SERVIÇOS -->
+<section class="cards reveal">
 
-<section id="servicos" class="servicos">
-
-<h2>Nossos Serviços</h2>
-
-<div class="servicos-grid">
-
-<div class="servico-card">
-<div class="servico-icon">🏍️</div>
-<h3>Oficina</h3>
-<p>Manutenção especializada, revisão completa, diagnóstico e preparação de motocicletas.</p>
-</div>
-
-<div class="servico-card">
-<div class="servico-icon">⚙️</div>
-<h3>Peças</h3>
-<p>Peças originais e paralelas para diversos modelos e anos de motos.</p>
-</div>
-
-<div class="servico-card">
-<div class="servico-icon">🛡️</div>
-<h3>Acessórios</h3>
-<p>Capacetes, equipamentos, suportes, iluminação e acessórios para sua moto.</p>
-</div>
-
-</div>
+  <div class="card">🔧 Mecânica Premium</div>
+  <div class="card">🛠 Peças Originais</div>
+  <div class="card">⚡ Performance</div>
 
 </section>
 
+<!-- WHATS -->
+<div class="whatsapp" onclick="whatsapp()">💬</div>
 
-<!-- SOBRE -->
-
+<script src="script.js"></script>
+</body>
+</html>
