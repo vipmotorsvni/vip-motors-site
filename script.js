@@ -31,7 +31,7 @@ window.addEventListener("scroll", () => {
 // WHATS PERSONALIZADO
 function whatsapp() {
   const msg = "Olá! Vim pelo site da Vip Motors e quero atendimento.";
-  window.open(`https://wa.me/5528999999999?text=${encodeURIComponent(msg)}`);
+  window.open(`https://wa.me/5528999290649?text=${encodeURIComponent(msg)}`);
 }
 
 // ABRIR PÁGINAS

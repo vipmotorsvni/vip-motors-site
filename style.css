@@ -25,6 +25,9 @@ body {
 
 .logo {
   height: 80px;
+  position: absolute;
+  left: 0px;
+  top: 48px;
 }
 
 /* HERO FULL SCREEN */
@@ -41,8 +44,8 @@ body {
   width: 100%;
   height: 100%;
 
-  background-size: cover;       /* 🔥 AJUSTA À TELA */
-  background-position: center;  /* 🔥 CENTRALIZA */
+  background-size: cover;          /* preenche a tela */
+  background-position: center 50%; /* 🔥 mostra mais da imagem */
   background-repeat: no-repeat;
 
   opacity: 0;
@@ -100,7 +103,7 @@ body {
 
 .moto {
   width: 70%;
-  animation: float 4s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -140,16 +143,33 @@ body {
   transform: translateY(0);
 }
 
-/* WHATS */
-.whatsapp {
+/* WHATSAPP TOPO */
+.whatsapp-topo {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #00ff88;
-  padding: 15px;
+  top: 135px;
+  left: 15px;
+  z-index: 2000;
+
+  background: #25D366;
+  padding: 10px;
   border-radius: 50%;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   cursor: pointer;
+
+  transition: 0.3s;
 }
+
+.whatsapp-topo img {
+  width: 40px; /* 🔥 tamanho maior */
+  height: 40px;
+}
+
+.whatsapp-topo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #25D366;
+}
+
 
 /* HEADER COM MENU */
 #header {
@@ -198,4 +218,23 @@ body {
 .card:hover {
   background: #00ff88;
   color: black;
+}
+
+/* RODAPÉ */
+.footer {
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 2px solid #00ff88;
+  margin-top: 50px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-content strong {
+  color: #00ff88;
 }
